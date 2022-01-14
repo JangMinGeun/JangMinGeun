@@ -74,6 +74,6 @@ if __name__ == '__main__':
         x = [i+1 for i in range(n_games)]
         plot_learning_curve(x, avg_score_save, figure_file_1)
         plot_learning_curve(x, score_history, figure_file_2)
-        np.savetxt('./data/bullet_v0_data_ddpg.csv', avg_score_save)
+        np.savetxt('./data/bullet_v0_data_ddpg.csv', score_history)
         plt.legend(['Running average of previous 20 scores','scores for each episode'])
         plt.title(['InvertedPendulumBulletEnv-v0'])
